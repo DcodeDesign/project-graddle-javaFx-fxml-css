@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<GridPane  styleClass="login"
+          fx:controller="sceneMain.sceneInside.ControllerSceneInside"
+          xmlns:fx="http://javafx.com/fxml">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="40" percentHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="50" percentHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <children>
+
+        <HBox GridPane.columnSpan="12" GridPane.rowIndex="0"
+              styleClass="container__logo" alignment="CENTER">
+            <ImageView fitHeight="230" fitWidth="230" >
+                <image >
+                    <Image url="@logo_a.png" />
+                </image>
+            </ImageView>
+        </HBox>
+
+        <VBox styleClass="form__container" alignment="TOP_CENTER"  GridPane.columnSpan="12" GridPane.rowIndex="1">
+
+            <HBox styleClass="form__feild" alignment="CENTER" GridPane.rowIndex="2" >
+                <TextField fx:id="user" styleClass="feild__style" minWidth="300.0" maxWidth="300.0" prefWidth="300.0" promptText="Login"/>
+            </HBox>
+
+            <HBox styleClass="form__feild" alignment="CENTER" GridPane.rowIndex="4">
+                <PasswordField fx:id="userPassword" styleClass="feild__style" minWidth="300.0" maxWidth="300.0" prefWidth="300.0" promptText="Password"/>
+            </HBox>
+
+            <HBox styleClass="form__button" alignment="CENTER" GridPane.rowIndex="5">
+                <Button fx:id="connection"  onAction="#handleButtonAction" minHeight="35.0" minWidth="300.0" maxWidth="300.0" prefWidth="300.0" text="Connexion"/>
+            </HBox>
+
+        </VBox>
+    </children>
+
+    <stylesheets>
+        <URL value="@styleSceneInside.css"/>
+    </stylesheets>
+</GridPane>

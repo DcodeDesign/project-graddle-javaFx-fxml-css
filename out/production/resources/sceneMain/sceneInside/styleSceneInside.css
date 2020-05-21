@@ -1,0 +1,47 @@
+.login {
+    -fx-alignment: CENTER;
+}
+
+.container__logo {
+    -fx-text-alignment: CENTER;
+    -fx-alignment: center;
+}
+
+.form__container {
+    -fx-padding: 10;
+}
+
+.form__label {
+    -fx-padding: 10;
+}
+
+.form__feild {
+    -fx-padding: 10;
+}
+
+.form__feild .feild__style {
+    -fx-opacity: 0.6;
+    -fx-font-size: 16;
+    -fx-background-color: transparent;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+    -fx-prompt-text-fill: #646464;
+    -fx-color: #646464;
+    -fx-color-label-visible: #646464;
+    -fx-border-color: #242424 #242424 linear-gradient(from 0% 25% to 100% 100%, #242424, #646464, #242424) #242424;
+    -fx-padding: 0 0 10 0;
+}
+
+.form__feild .feild__style:focused {
+    -fx-border-width: 1;
+    -fx-opacity: 1;
+    -fx-prompt-text-fill: #7d7d7d;
+    -fx-color: #7d7d7d;
+    -fx-border-color: #242424 #242424 linear-gradient(from 0% 25% to 100% 100%, #242424, #7d7d7d, #242424) #242424;
+}
+
+.form__button {
+    -fx-padding: 10;
+    -fx-font-size: 16;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+}

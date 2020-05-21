@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<GridPane styleClass="templateWindow" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="helpers.topBar.ControllerTopBar">
+
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+
+    <children>
+
+        <!-- topBar -->
+        <!-- topBar title -->
+        <HBox styleClass="topBar__title" GridPane.columnSpan="12">
+            <Label fx:id="Title" text="App" textFill="#cdcdcd">
+            </Label>
+        </HBox>
+
+        <!-- topBar actions -->
+        <HBox styleClass="topBar__actions" GridPane.columnSpan="12">
+            <VBox styleClass="action__btn" GridPane.columnIndex="1">
+                <Circle fx:id="close" fill="#fa4771" onMouseClicked="#closeclick" radius="6.0" stroke="#fa4771" strokeLineCap="ROUND" strokeType="INSIDE" styleClass="btn__close" />
+            </VBox>
+            <VBox styleClass="action__btn" GridPane.columnIndex="2">
+                <Circle fx:id="min" fill="#ffc965" onMouseClicked="#minclick" radius="6.0" stroke="#ffc965" strokeType="INSIDE" styleClass="btn__minify" />
+            </VBox>
+            <VBox styleClass="action__btn" GridPane.columnIndex="3">
+                <Circle fill="#42cf9b" onMouseClicked="#maximize" radius="6.0" stroke="#42cf9b" strokeType="INSIDE" styleClass="btn__maximize" />
+            </VBox>
+        </HBox>
+
+        <Separator prefHeight="3.0" prefWidth="283.0" styleClass="topBar__line" GridPane.columnSpan="12" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+    </children>
+    <stylesheets>
+        <URL value="@styleSceneTopBar.css" />
+    </stylesheets>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

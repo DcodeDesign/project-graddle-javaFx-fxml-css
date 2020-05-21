@@ -1,0 +1,61 @@
+.topBar {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.topBar__content {
+    -fx-text-alignment: center;
+    -fx-border-radius: 5 5 0 0;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 3;
+
+}
+
+.topBar__actions {
+    -fx-padding: 0 0 0 10;
+    -fx-text-alignment: center;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 5 5 0 0;
+}
+
+.btn__close:hover{
+    -fx-fill: #8e2c47;
+}
+
+.btn__minify:hover{
+    -fx-fill: #a28341;
+}
+
+.btn__maximize:hover{
+    -fx-fill: #24674c;
+}
+
+.action__btn {
+    -fx-padding: 10 3 10 3;
+    -fx-background-color: transparent;
+}
+
+.topBar__title {
+    -fx-border-radius: 5 5 0 0;
+    -fx-background-radius: 5 5 0 0;
+    -fx-alignment: CENTER TOP ;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+    -fx-background-color: linear-gradient(from 0% 25%  to 100% 100%, #242424, #3b3b3b, #242424);
+}
+
+.topBar__title label {
+    -fx-padding: 0;
+}
+
+.separator > .line {
+    -fx-border-width: 0; /* 1 */
+    -fx-border-color: #a4a4a4;
+    -fx-pref-height: 1;
+    -fx-background-color: linear-gradient(from 0% 25%  to 100% 100%, #242424, #646464, #242424);
+
+}

@@ -1,0 +1,125 @@
+.root {
+
+    /* -fx-accent: #cecece; */
+    -fx-accent: #7d7d7d;
+    -fx-focus-color: -fx-accent;
+    -fx-base: #242424;
+    -fx-control-inner-background: derive(-fx-base, 35%);
+    -fx-control-inner-background-alt: -fx-control-inner-background;
+
+    -fx-hgap: 0px;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color:
+            transparent,
+            linear-gradient(#7d7d7d 0%, #242424 2%, #242424 96%, #7d7d7d 100%),
+            /*linear-gradient(#7d7d7d 0%, #242424 2%, #242424 96%, #646464 100%),*/
+            /*radial-gradient(focus-distance 0% , center 50% 0%  , radius 50% , #232323 0%, #242424 100%);*/
+            linear-gradient(#242424 0%, #242424 100%);
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 5, 0, 0, 0);
+
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-background-insets: 0, 10, 11;
+    -fx-border-insets: 0, 10, 11;
+
+
+    /*
+         -fx-background-image: url("luca-bravo-XJXWbfSo2f0-unsplash.jpg");
+         -fx-background-position: center;
+         -fx-background-repeat: no-repeat;
+         -fx-background-size: cover, auto;
+         -fx-border-width:0;
+         -fx-border-color:#a4a4a4;
+    */
+}
+
+.label {
+    -fx-text-fill: lightgray;
+}
+
+.texte {
+    -fx-text-fill: lightgray;
+}
+
+.text-field {
+    -fx-prompt-text-fill: gray;
+}
+
+.button {
+    -fx-focus-traversable: false;
+}
+
+.button:hover {
+    -fx-text-fill: white;
+}
+
+.separator *.line {
+    -fx-background-color: #1c1c1c;
+    -fx-border-style: solid;
+    -fx-border-width: 1px;
+}
+
+.scroll-bar {
+    -fx-background-color: derive(-fx-base, 45%)
+}
+
+.button:default {
+    -fx-base: -fx-accent;
+}
+
+.table-view {
+    /*-fx-background-color: derive(-fx-base, 10%);*/
+    -fx-selection-bar-non-focused: derive(-fx-base, 50%);
+}
+
+.table-view .column-header .label {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-weight: none;
+}
+
+.list-cell:even,
+.list-cell:odd,
+.table-row-cell:even,
+.table-row-cell:odd {
+    -fx-control-inner-background: derive(-fx-base, 15%);
+}
+
+.list-cell:empty,
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.list-cell,
+.table-row-cell {
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+
+/*
+ The Stage background.
+*/
+.decoration-background {
+    -fx-fill: radial-gradient(focus-angle 45deg, focus-distance 20%, center 25% 25%, radius 50%, reflect, #eeeeee88, #aaaaaa88 75%, gray);
+    -fx-stroke-width: 0;
+    -fx-arc-width: 20px;
+    -fx-arc-height: 20px;
+}
+
+/*
+Defines the rectangle responsible for the shadow
+*/
+.decoration-shadow {
+    -fx-fill: black;
+    -fx-stroke-width: 0;
+    -fx-arc-width: 20px;
+    -fx-arc-height: 20px;
+}
+
+/* ------------------------------------------- */
+
+.container__login {
+    -fx-padding:10 0 0 0;
+    -fx-alignment: CENTER;
+}

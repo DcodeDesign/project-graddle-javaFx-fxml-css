@@ -1,0 +1,53 @@
+.topBar {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.topBar__content {
+    -fx-text-alignment: center;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 3;
+
+}
+
+.topBar__actions {
+    -fx-padding: 0 0 0 10;
+    -fx-text-alignment: center;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+
+.action__btn {
+    -fx-padding: 10 3 10 3;
+    -fx-background-color: transparent;
+}
+
+.topBar__title {
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-alignment: CENTER BOTTOM ;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 0.6;
+    -fx-font-weight: bold;
+    -fx-padding: 0;
+    -fx-background-color: linear-gradient(from 0% 25%  to 100% 100%, #242424, #3b3b3b, #242424);
+    /*-fx-margin:0 3 0 3 ;*/
+}
+
+.topBar__title label {
+    -fx-padding: 0;
+}
+
+.separator > .line {
+    -fx-border-width: 0; /* 1 */
+    -fx-border-color: #a4a4a4;
+    -fx-pref-height: 1;
+    -fx-background-color: linear-gradient(from 0% 25%  to 100% 100%, #242424, #646464, #242424);
+}
+
+Label {
+    -fx-padding: 8 3 8 3;
+}
